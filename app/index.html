@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anggrek Household Budget</title>
+<meta name="description" content="A working household budget site for the Anggrek family: income, spending, planner, savings goals, bills and reports — all offline, all in your browser.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">&#127807;</span>
+      <span class="brand-text"><strong>Anggrek Household</strong><small>Family budget, kept in balance</small></span>
+    </a>
+    <form class="header-search" id="header-search" role="search">
+      <label class="visually-hidden" for="search-input">Search transactions</label>
+      <input id="search-input" name="q" type="search" placeholder="Search spending, bills, payees&hellip;" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <p class="month-chip" id="month-chip"></p>
+  </div>
+  <nav class="site-nav" aria-label="Sections">
+    <div class="wrap nav-inner" id="nav-links">
+      <a href="#/" data-route="">Dashboard</a>
+      <a href="#/income" data-route="income">Income</a>
+      <a href="#/expenses" data-route="expenses">Expenses</a>
+      <a href="#/planner" data-route="planner">Monthly planner</a>
+      <a href="#/goals" data-route="goals">Savings goals</a>
+      <a href="#/bills" data-route="bills">Bills calendar</a>
+      <a href="#/reports" data-route="reports">Reports</a>
+      <a href="#/settings" data-route="settings">Settings</a>
+    </div>
+  </nav>
+</header>
+<main id="app" class="wrap"></main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><strong>Anggrek Household Budget</strong> — a fictional family&rsquo;s working budget. All data lives in your browser&rsquo;s local storage; nothing leaves this device and nothing is fetched from the network.</p>
+    <p class="footer-links"><a href="#/reports">Reports</a> &middot; <a href="#/settings">Export your data</a> &middot; <a href="#/planner">Plan next month</a></p>
+  </div>
+</footer>
+</body>
+</html>
